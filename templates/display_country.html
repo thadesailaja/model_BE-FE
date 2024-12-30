@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <style>
+        table{
+            text-align: center;
+            border-radius: 0px 5px;
+        }
+        th{
+            background-color: blue;
+            color: white;
+        }
+        td{
+            background-color: aqua;
+        }
+        td,th{
+            padding: 3px 15px;
+            border: 2px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Countries</h1>
+        <table border="2px solid black">
+            <thead>
+                <th>Country Name</th>
+                <th>Country ID</th>
+                <th>Country Abb</th>
+            </thead>
+            <tbody>
+                {% for CO in LCO %}
+                <tr>
+                    <td>{{CO.cou_name}}</td>
+                    <td>{{CO.cou_id}}</td>
+                    <td>{{CO.cou_abb}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

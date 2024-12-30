@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitals</title>
+    <style>
+        table{
+            text-align: center;
+            border-collapse:collapse;
+            font-family: arial, sans-serif;
+        }
+        th{
+            background-color: #000000;
+            color: #ffffff;
+           
+        }
+        td{
+            background-color: rgb(245, 116, 176);
+            
+        }
+        th,td{
+            padding: 3px 15px;
+            border: 3px solid #dddddd;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Capitals</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Country Name</th>
+                    <th>Capital Name</th>
+                    <th>Capital Abb</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for CAO in LCAO %}
+                <tr>
+                    <td>{{CAO.cou_name}}</td>
+                    <td>{{CAO.cap_name}}</td>
+                    <td>{{CAO.cap_abb}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>
