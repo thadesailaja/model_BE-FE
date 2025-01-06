@@ -23,6 +23,7 @@ urlpatterns = [
     path('insert_country/',insert_country,name='insert_country'),
     path('insert_capital/',insert_capital,name='insert_capital'),
     path('display_country/',display_country,name='display_country'),
-    path('display_capital/',display_capital,name='display_capital')
+    path('display_capital/',display_capital,name='display_capital'),
+    path('coucap/',coucap,name='coucap'),
 ]
 
