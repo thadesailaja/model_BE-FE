@@ -36,7 +36,7 @@ def insert_capital(request):
     else:
         return HttpResponse('the given details r already present')
     
-#displaying from back-end to front-end
+#displaying from back-end to front-end and field lookups
 
 def display_country(request):
     LCO=Country.objects.all()
