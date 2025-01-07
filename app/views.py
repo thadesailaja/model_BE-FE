@@ -57,6 +57,7 @@ def display_capital(request):
     dic={'LCAO':LCAO}
     return render(request,'display_capital.html',dic)
 
+#join country and capital tables
 def coucap(request):
     LCCO=Capital.objects.all().select_related('cou_name')
     LCCO=Capital.objects.select_related('cou_name').filter(cap_name__startswith='d')
